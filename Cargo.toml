@@ -6,4 +6,8 @@ members = [
     "common/error",
     "common/thread",
     "common/bigint",
+
+    "communication/pubsub_zeromq",
+    "communication/pubsub_rabbitmq",
+    "communication/pubsub_kafka",
 ]
