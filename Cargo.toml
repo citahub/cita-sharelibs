@@ -2,4 +2,8 @@
 
 members = [
     "common/logger",
+    "common/io",
+    "common/error",
+    "common/thread",
+    "common/bigint",
 ]
