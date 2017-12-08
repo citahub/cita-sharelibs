@@ -17,4 +17,6 @@ members = [
     "cryptography/sha3",
     "cryptography/blake2b",
     "cryptography/sm3",
+
+    "serialize/rlp",
 ]
