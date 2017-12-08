@@ -19,4 +19,5 @@ members = [
     "cryptography/sm3",
 
     "serialize/rlp",
+    "serialize/rlp_derive",
 ]
