@@ -11,4 +11,9 @@ members = [
     "communication/pubsub_rabbitmq",
     "communication/pubsub_kafka",
     "communication/pubsub",
+
+    "cryptography/bloomable",
+    "cryptography/sha3",
+    "cryptography/blake2b",
+    "cryptography/sm3",
 ]
