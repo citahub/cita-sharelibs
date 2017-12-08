@@ -6,6 +6,7 @@ members = [
     "common/error",
     "common/thread",
     "common/bigint",
+    "common/util",
 
     "communication/pubsub_zeromq",
     "communication/pubsub_rabbitmq",
