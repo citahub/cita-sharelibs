@@ -12,6 +12,7 @@ members = [
     "communication/pubsub_kafka",
     "communication/pubsub",
 
+    "cryptography/bloom",
     "cryptography/bloomable",
     "cryptography/sha3",
     "cryptography/blake2b",
