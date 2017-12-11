@@ -29,4 +29,8 @@ members = [
     "serialize/libproto",
 
     "blockchain/tx_pool",
+
+    "consensus/proof",
+    "consensus/engine_json",
+    "consensus/authority_manage",
 ]
