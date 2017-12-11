@@ -21,6 +21,7 @@ members = [
     "cryptography/sm3",
     "cryptography/secp256k1",
     "cryptography/ed25519",
+    "cryptography/crypto",
     "cryptography/ethkey",
 
     "serialize/rlp",
