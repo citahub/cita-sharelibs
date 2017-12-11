@@ -17,7 +17,11 @@ members = [
     "cryptography/bloomable",
     "cryptography/sha3",
     "cryptography/blake2b",
+    "cryptography/sm2",
     "cryptography/sm3",
+    "cryptography/secp256k1",
+    "cryptography/ed25519",
+    "cryptography/ethkey",
 
     "serialize/rlp",
     "serialize/rlp_derive",
