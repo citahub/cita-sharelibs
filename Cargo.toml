@@ -33,4 +33,6 @@ members = [
     "consensus/proof",
     "consensus/engine_json",
     "consensus/authority_manage",
+
+    "consensus/engine",
 ]
