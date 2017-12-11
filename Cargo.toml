@@ -2,7 +2,7 @@
 
 members = [
     "common/logger",
-    "common/io",
+    "common/ethcore-io",
     "common/error",
     "common/thread",
     "common/bigint",
@@ -13,20 +13,20 @@ members = [
     "communication/pubsub_kafka",
     "communication/pubsub",
 
-    "cryptography/bloom",
+    "cryptography/ethcore-bloom-journal",
     "cryptography/bloomable",
     "cryptography/sha3",
     "cryptography/blake2b",
-    "cryptography/sm2",
+    "cryptography/cita-sm2",
     "cryptography/sm3",
-    "cryptography/secp256k1",
-    "cryptography/ed25519",
-    "cryptography/crypto",
+    "cryptography/cita-secp256k1",
+    "cryptography/cita-ed25519",
+    "cryptography/cita-crypto",
     "cryptography/ethkey",
 
     "serialize/rlp",
     "serialize/rlp_derive",
-    "serialize/proto",
+    "serialize/libproto",
 
     "blockchain/tx_pool",
 ]
