@@ -26,4 +26,5 @@ members = [
 
     "serialize/rlp",
     "serialize/rlp_derive",
+    "serialize/proto",
 ]
