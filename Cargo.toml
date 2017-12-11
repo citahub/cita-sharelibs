@@ -27,4 +27,6 @@ members = [
     "serialize/rlp",
     "serialize/rlp_derive",
     "serialize/proto",
+
+    "blockchain/tx_pool",
 ]

@@ -1,0 +1,9 @@
+[package]
+name = "tx_pool"
+version = "0.6.0"
+authors = ["Cryptape Technologies <arch@cryptape.com>"]
+
+[dependencies]
+libproto = { git = "https://github.com/cryptape/cita-sharelibs.git", rev = "ec04796" }
+util = { git = "https://github.com/cryptape/cita-sharelibs.git", rev = "6a5e287" }
+cita-crypto = { git = "https://github.com/cryptape/cita-sharelibs.git", rev = "55184bd" }
