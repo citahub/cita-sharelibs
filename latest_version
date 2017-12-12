@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+for crate_dir in $(cat Cargo.toml | grep "^[ ]\+\"" | tr -d '[", ]'); do
+    crate="$(echo ${crate_dir} | cut -d'/' -f 2)"
+    commit_id="$(git log --pretty=oneline -1 ${crate_dir} | cut -c 1-7)"
+    printf "Commit %s for %s\n" "${commit_id}" "${crate}"
+    find . -mindepth 2 -name "Cargo.toml" -exec grep -H "${crate}[^-a-Z0-9_]" {} \; \
+        | grep sharelibs | grep rev | grep -v "${commit_id}" \
+        | xargs -I {} printf "\tOutdated: %s\n" '{}'
+done

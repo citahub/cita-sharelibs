@@ -10,4 +10,4 @@ protobuf = { version = "^1.0.0" }
 cita-crypto = { git = "https://github.com/cryptape/cita-sharelibs.git", rev = "c6b8ef8" }
 engine_json = { git = "https://github.com/cryptape/cita-sharelibs.git", rev = "606971c" }
 proof = { git = "https://github.com/cryptape/cita-sharelibs.git", rev = "44c1147" }
-pubsub = { git = "https://github.com/cryptape/cita-sharelibs.git", rev = "11e8929" }
+pubsub = { git = "https://github.com/cryptape/cita-sharelibs.git", rev = "3910698" }

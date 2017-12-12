@@ -25,7 +25,7 @@ bigint = { git = "https://github.com/cryptape/cita-sharelibs.git", rev = "191fde
 parking_lot = "0.4"
 ansi_term = "0.9"
 tiny-keccak= "1.0"
-ethcore-bloom-journal = { git = "https://github.com/cryptape/cita-sharelibs.git", rev = "98ff849" }
+ethcore-bloom-journal = { git = "https://github.com/cryptape/cita-sharelibs.git", rev = "139529a" }
 regex = "0.2"
 lru-cache = "0.1.0"
 logger = { git = "https://github.com/cryptape/cita-sharelibs.git", rev = "056d5bd" }
