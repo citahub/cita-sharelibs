@@ -2,6 +2,10 @@
 
 function test_latest_vesion () {
     editor="$1"
+    hash "${editor}" >/dev/null 2>&1
+    if [ $? -ne 0 ]; then
+        editor=""
+    fi
     for crate_dir in $(cat Cargo.toml | grep "^[ ]\+\"" | tr -d '[", ]'); do
         crate="$(echo ${crate_dir} | cut -d'/' -f 2)"
         commit_id="$(git log --pretty=oneline -1 ${crate_dir} | cut -c 1-7)"
@@ -13,7 +17,7 @@ function test_latest_vesion () {
             printf "\tOutdated: %s\n" "${cargoline}"
             if [ -n "${editor}" ]; then
                 cargotoml="$(echo "${cargoline}"| awk -F':' '{ print $1 }')"
-                "${editor}" ${cargotoml}
+                [ -n "${editor}" ] && "${editor}" ${cargotoml}
             fi
         done
     done
