@@ -7,7 +7,7 @@ authors = ["Cryptape Technologies <arch@cryptape.com>"]
 [dependencies]
 protobuf = { version = "^1.0.0"}
 cita-crypto = { git = "https://github.com/cryptape/cita-sharelibs.git", rev = "c6b8ef8" }
-util = { git = "https://github.com/cryptape/cita-sharelibs.git", rev = "6a5e287" }
+util = { git = "https://github.com/cryptape/cita-sharelibs.git", rev = "47da817" }
 rustc-serialize = "0.3"
 rlp = { git = "https://github.com/cryptape/cita-sharelibs.git", rev = "77e2c45" }
 serde = "1.0"

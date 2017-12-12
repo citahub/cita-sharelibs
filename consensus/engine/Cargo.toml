@@ -5,7 +5,7 @@ authors = ["Cryptape Technologies <arch@cryptape.com>"]
 
 [dependencies]
 libproto = { git = "https://github.com/cryptape/cita-sharelibs.git", rev = "606971c" }
-util = { git = "https://github.com/cryptape/cita-sharelibs.git", rev = "6a5e287" }
+util = { git = "https://github.com/cryptape/cita-sharelibs.git", rev = "47da817" }
 protobuf = { version = "^1.0.0" }
 cita-crypto = { git = "https://github.com/cryptape/cita-sharelibs.git", rev = "c6b8ef8" }
 engine_json = { git = "https://github.com/cryptape/cita-sharelibs.git", rev = "606971c" }

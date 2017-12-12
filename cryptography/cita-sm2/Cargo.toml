@@ -8,5 +8,5 @@ lazy_static = "0.2"
 rustc-serialize = "0.3"
 serde = "1.0"
 bincode = "0.8"
-util = { git = "https://github.com/cryptape/cita-sharelibs.git", rev = "6a5e287" }
+util = { git = "https://github.com/cryptape/cita-sharelibs.git", rev = "47da817" }
 rlp = { git = "https://github.com/cryptape/cita-sharelibs.git", rev = "77e2c45" }

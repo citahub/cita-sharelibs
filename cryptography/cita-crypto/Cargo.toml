@@ -7,7 +7,7 @@ authors = ["Cryptape Technologies <arch@cryptape.com>"]
 cita-ed25519 = { git = "https://github.com/cryptape/cita-sharelibs.git", rev = "139529a", optional = true }
 cita-secp256k1 = { git = "https://github.com/cryptape/cita-sharelibs.git", rev = "139529a", optional = true }
 cita-sm2 = { git = "https://github.com/cryptape/cita-sharelibs.git", rev = "139529a", optional = true }
-util = { git = "https://github.com/cryptape/cita-sharelibs.git", rev = "6a5e287" }
+util = { git = "https://github.com/cryptape/cita-sharelibs.git", rev = "47da817" }
 
 [features]
 default = ["secp256k1"]
