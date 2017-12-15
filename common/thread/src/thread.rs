@@ -14,7 +14,7 @@ pub struct Thread {
 type Fp = Box<Fn() -> () + Send + Sync>;
 
 struct Closure {
-    fp: Fp
+    fp: Fp,
 }
 
 impl Closure {
@@ -24,11 +24,12 @@ impl Closure {
 }
 
 impl Thread {
-    pub fn spawnloop<F>(f: F) -> Thread where
-        F: Fn() -> () + Send + Sync + 'static {
-
+    pub fn spawnloop<F>(f: F) -> Thread
+    where
+        F: Fn() -> () + Send + Sync + 'static,
+    {
         let (sender, receiver) = mpsc::channel();
-        let closure = Arc::new(Closure {fp: Box::new(f)});
+        let closure = Arc::new(Closure { fp: Box::new(f) });
 
         let thread = thread::spawn(move || {
             let f = closure.clone();
@@ -51,7 +52,9 @@ impl Thread {
 
 impl Drop for Thread {
     fn drop(&mut self) {
-        self.sender_terminate.send(TerminateMessage::Terminate).unwrap();
+        self.sender_terminate
+            .send(TerminateMessage::Terminate)
+            .unwrap();
         if let Some(thread) = self.thread.take() {
             thread.join().unwrap();
         }
@@ -70,7 +73,7 @@ impl Drop for Thread {
 mod tests {
     use super::*;
     use std::time::Duration;
-    use std::sync::{Mutex, Arc};
+    use std::sync::{Arc, Mutex};
 
     #[test]
     fn thread_join_loop() {
