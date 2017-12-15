@@ -5,9 +5,9 @@ authors = ["Cryptape Technologies <arch@cryptape.com>"]
 
 [dependencies]
 dotenv = "0.10.0"
-pubsub_zeromq = { git = "https://github.com/cryptape/cita-sharelibs.git", rev = "8d1ecd1", optional = true }
-pubsub_rabbitmq = { git = "https://github.com/cryptape/cita-sharelibs.git", rev = "8d1ecd1", optional = true }
-pubsub_kafka = { git = "https://github.com/cryptape/cita-sharelibs.git", rev = "8d1ecd1", optional = true }
+pubsub_zeromq = { path = "../../communication/pubsub_zeromq", optional = true }
+pubsub_rabbitmq = { path = "../../communication/pubsub_rabbitmq", optional = true }
+pubsub_kafka = { path = "../../communication/pubsub_kafka", optional = true }
 
 [features]
 default = ["rabbitmq"]

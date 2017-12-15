@@ -4,10 +4,10 @@ version = "0.1.0"
 authors = ["Cryptape Technologies <arch@cryptape.com>"]
 
 [dependencies]
-cita-ed25519 = { git = "https://github.com/cryptape/cita-sharelibs.git", rev = "07cfa04", optional = true }
-cita-secp256k1 = { git = "https://github.com/cryptape/cita-sharelibs.git", rev = "07cfa04", optional = true }
-cita-sm2 = { git = "https://github.com/cryptape/cita-sharelibs.git", rev = "07cfa04", optional = true }
-util = { git = "https://github.com/cryptape/cita-sharelibs.git", rev = "47da817" }
+cita-ed25519 = { path = "../../cryptography/cita-ed25519", optional = true  }
+cita-secp256k1 = { path = "../../cryptography/cita-secp256k1", optional = true  }
+cita-sm2 = { path = "../../cryptography/cita-sm2", optional = true  }
+util = { path = "../../common/util" }
 
 [features]
 default = ["secp256k1"]
